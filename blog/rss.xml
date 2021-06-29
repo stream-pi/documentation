@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Stream-Pi Documentation Blog</title>
-        <link>https://stream-pi.github.io/blog</link>
+        <link>https://documentation.stream-pi.com/blog</link>
         <description>Stream-Pi Documentation Blog</description>
         <lastBuildDate>Sun, 25 Oct 2015 23:29:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
