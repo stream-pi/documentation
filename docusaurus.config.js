@@ -5,13 +5,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 module.exports = {
   title: "Stream-Pi Documentation",
   tagline: "A Robust Macro Keyboard Software",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://documentation.stream-pi.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "Stream-Pi", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "stream-pi", // Usually your GitHub org/user name.
+  projectName: "documentation", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "Stream-Pi",
