@@ -1,0 +1,8 @@
+node_modules/
+out/
+package-lock.json
+build/
+logs/
+http/
+certs/
+.docusaurus/
