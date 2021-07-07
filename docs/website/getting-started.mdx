@@ -1,0 +1,130 @@
+---
+sidebar_position: 1
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Setting up the Environment
+
+In order to develop for this project, you'll need to get set up for web development. This first part will go over how to get set up with node and npm. This project makes use of npm **we do not use yarn**.
+
+## Installing Node / NPM
+
+You'll want to be sure to have **Node 14.x.x** and **NPM 6.x.x**
+
+### Using NVM (recommended)
+
+<Tabs
+  groupId="operating-systems"
+  values={[
+    {label: "Windows", value: "nvm-install-win"},
+    {label: "Mac", value: "nvm-install-mac"},
+    {label: "Linux", value: "nvm-install-lin"},
+  ]}
+>
+<TabItem value="nvm-install-win">
+
+Visit [NVM for Windows page](https://github.com/coreybutler/nvm-windows)
+
+Scroll down to [`Installation & Upgrades`](https://github.com/coreybutler/nvm-windows#installation--upgrades) and go through the instructions outlined on this page.
+
+:::note
+You Will **NEED** to uninstall any existing node / npm installations, the Github Repo outlines how to do this
+:::
+
+Open the project in your editor of choice and / or open the directory in PowerShell / CMD and run the following
+
+```powershell
+nvm use 14.16.0
+```
+
+:::note
+`nvm use` without a version does NOT work for the windows version like it does for Mac / Linux
+:::
+
+</TabItem>
+<TabItem value="nvm-install-mac">
+
+It is recommended, but *not required* that you uninstall any existing node / npm installations
+
+Visit the [NVM Github page](https://github.com/nvm-sh/nvm)
+
+Scroll down to [`Installing and Updating`](https://github.com/nvm-sh/nvm#installing-and-updating) and follow the instructions
+
+Open the project in your editor of choice and / or open the directory in the terminal and run the following:
+
+```bash
+nvm use
+```
+
+You can also do:
+
+```bash
+nvm use 14.16.0
+```
+
+</TabItem>
+<TabItem value="nvm-install-lin">
+
+It is recommended, but *not required* that you uninstall any existing node / npm installations
+
+Visit the [NVM Github page](https://github.com/nvm-sh/nvm)
+
+Scroll down to [`Installing and Updating`](https://github.com/nvm-sh/nvm#installing-and-updating) and follow the instructions
+
+Open the project in your editor of choice and / or open the directory in the terminal and run the following:
+
+```bash
+nvm use
+```
+
+You can also do:
+
+```bash
+nvm use 14.16.0
+```
+
+</TabItem>
+
+</Tabs>
+
+<hr />
+
+### Using the installer
+
+Visit the [Node JS Website](https://nodejs.org/) and download the **LTS Release**. At the time of writing this, it is **14.17.1**.
+
+Run the installer that it downloads and go through the setup. After setup finishes open your terminal and type:
+
+```bash
+node -v
+# AND
+npm -v
+```
+
+if the install was successful, each command will output a response with a version number.
+
+:::caution
+On unix based operating systems, you may run into permission issues when trying to globally install packages. To fix this, follow [this guide](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally) which explains how to change the npm global location.
+:::
+
+## Getting **GLOBAL** packages
+
+You may find that you need to install the `typescript` package globally, in fact it is generally recommended.
+
+```bash
+npm i -g typescript
+```
+
+To check if the installations worked, you can run:
+
+```bash
+tsc -v
+```
+
+Typescript is the codebase of the website, and the installation includes a compiler. In case your IDE can not be configured to use the one in `node_modules/typescript/lib` you will need an installation to fall back on.
+
+And that is all you'll need to get set up, the project itself contains the rest of the npm modules needed to run.
+
+**More info coming soon...**

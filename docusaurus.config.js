@@ -13,6 +13,9 @@ module.exports = {
   organizationName: "stream-pi", // Usually your GitHub org/user name.
   projectName: "documentation", // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
     navbar: {
       title: "Stream-Pi",
       logo: {
@@ -77,6 +80,7 @@ module.exports = {
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
+      additionalLanguages: ["java", "powershell"],
     },
   },
   presets: [
